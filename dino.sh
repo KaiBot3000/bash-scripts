@@ -13,6 +13,9 @@ elif [[ $1 = "dna" ]]; then
 elif [[ $1 = "joke" ]]; then
 	STR="What's better than a talking dinosaur?"
 	PUNCH="A spelling bee!"
+elif [[ $1 = "compliment" ]]; then
+	STR="If you were a dinosaur..."
+	PUNCH=" you'd be a Gorgeousaurus"
 else
 	STR="Hi!"
 fi
