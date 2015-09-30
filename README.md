@@ -2,10 +2,10 @@
 
 # Dino
 
-An experiment in bash scripting! 
+An exploration of bash scripting and aliasing. 
 
 
-### Run it!
+#### Run it!
 
 Clone repo:
 ```sh
