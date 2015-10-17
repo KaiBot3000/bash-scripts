@@ -16,6 +16,9 @@ elif [[ $1 = "joke" ]]; then
 elif [[ $1 = "compliment" ]]; then
 	STR="If you were a dinosaur..."
 	PUNCH=" you'd be a Gorgeousaurus"
+elif [[ $1 = "date" ]]; then
+	STR="$(date)"
+	PUNCH="(lol)"
 else
 	STR="Hi!"
 fi
@@ -23,7 +26,7 @@ fi
 printf "\n\n\n"
 printf "                                   __  \n"
 printf "                                  / _)  "
-echo $STR
+echo "${STR}"
 printf "                           .-^^^-/ /  \n"
 printf "                        __/       /  \n"
 printf "                       <__.|_|-|_|  \n"

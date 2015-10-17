@@ -35,11 +35,12 @@ KaiHB:~ kai$ dino danger!
 
 Arguments:
 ```sh
+$ dino compliment
 $ dino danger
 $ dino danger!
-$ dino kale
-$ dino compliment
 $ dino dna
+$ dino date
 $ dino joke
+$ dino kale
 ```
 
