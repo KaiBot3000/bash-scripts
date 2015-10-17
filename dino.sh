@@ -31,5 +31,5 @@ printf "                           .-^^^-/ /  \n"
 printf "                        __/       /  \n"
 printf "                       <__.|_|-|_|  \n"
 printf "\n\n\t\t\t"
-echo $PUNCH
+echo "${PUNCH}"
 printf "\n\n"
