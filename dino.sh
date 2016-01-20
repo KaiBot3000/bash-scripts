@@ -20,17 +20,24 @@ elif [[ $1 = "date" ]]; then
 	STR="$(date)"
 	PUNCH="(lol)"
 elif [[ $1 = "meme" ]]; then
-  STR="Say hello to my little friend"
-  # open will only work on osx
-  open "http://www.google.com/search?q=philosoraptor"
-  # if [ ! -z "$BROWSER" ]; then
-  #   mybrowser="$BROWSER"
-  #   echo "$mybrowser" 
-  #   echo "browser was configured" 
-  # else
-  #   mybrowser="$(which firefox || which opera || which arora)"
-  #   echo "$mybrowser"
-  # fi
+  STR="Have you met philosoraptor?"
+  URL="http://google.com/images?q=philosoraptor"
+  # if the variable is a non-0 length
+  if [ ! -z $BROWSER ]; then
+    # hopefully this works for windows?
+    $BROWSER $URL
+  elif which open > /dev/null; then
+    # it's osX
+    open $URL
+  elif which xdg-open > /dev/null; then
+    # it's *nix
+    xdg-open $URL
+  elif which gnome-open > /dev/null; then
+    # it's gnome
+    gnome-open $URL
+  else
+    echo "Could not detect the web browser to use."
+  fi
 else
   STR="Hi!"
 fi
