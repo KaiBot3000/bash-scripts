@@ -19,10 +19,21 @@ elif [[ $1 = "compliment" ]]; then
 elif [[ $1 = "date" ]]; then
 	STR="$(date)"
 	PUNCH="(lol)"
+elif [[ $1 = "speak" ]]; then
+  STR="Teehee."
+  WRD="raar"
+  if which say > /dev/null; then
+    say $WRD
+  elif which espeak > /dev/null; then
+    espeak $WRD
+  else
+    PUNCH="Your computer doesn't like my voice :("
+  fi
 elif [[ $1 = "meme" ]]; then
   STR="Have you met philosoraptor?"
+  # point the default browser to this url!
   URL="http://google.com/images?q=philosoraptor"
-  # if the variable is a non-0 length
+    # if the variable is a non-0 length
   if [ ! -z $BROWSER ]; then
     # hopefully this works for windows?
     $BROWSER $URL
