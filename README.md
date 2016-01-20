@@ -42,5 +42,7 @@ $ dino dna
 $ dino date
 $ dino joke
 $ dino kale
+$ dino meme
+$ dino speak
 ```
 
