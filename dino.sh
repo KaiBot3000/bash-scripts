@@ -23,7 +23,7 @@ elif [[ $1 = "speak" ]]; then
   STR="Teehee."
   WRD="raar"
   if which say > /dev/null; then
-    say $WRD
+    say -v Albert $WRD
   elif which espeak > /dev/null; then
     espeak $WRD
   else
