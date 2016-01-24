@@ -53,6 +53,7 @@ else
   STR="Hi!"
 fi
 
+clear
 printf "\n\n\n"
 printf "                                   __  \n"
 printf "                                  / _)  "
