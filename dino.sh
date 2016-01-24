@@ -47,7 +47,7 @@ elif [[ $1 = "meme" ]]; then
     # it's gnome
     gnome-open $URL
   else
-    echo "Could not detect the web browser to use."
+    PUNCH="Could not detect which web browser to use."
   fi
 else
   STR="Hi!"
