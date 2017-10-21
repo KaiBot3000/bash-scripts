@@ -36,6 +36,7 @@ KaiHB:~ kai$ dino danger!
 Arguments:
 ```sh
 $ dino compliment
+$ dino dadjoke
 $ dino danger
 $ dino danger!
 $ dino dna

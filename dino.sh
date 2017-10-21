@@ -49,6 +49,24 @@ elif [[ $1 = "meme" ]]; then
   else
     PUNCH="Could not detect which web browser to use."
   fi
+elif [[ $1 = "dadjoke" ]]; then
+  joke=$(curl -s https://icanhazdadjoke.com/)
+
+  # Count number of lines in the joke 
+  line_count=$(echo "$joke" | wc -l)
+
+  if [ "$line_count" == "1" ]; then
+    if [ `expr "$joke" : ".*[?].*"` -gt 0 ];
+    then 
+       STR="$(sed 's/?.*//' <<< "$joke")?"
+       PUNCH=$(sed 's/^[^?]*?//' <<< "$joke")
+    else
+      STR=$joke
+    fi
+  # NOTE(G3): Throw out multiline jokes due to formating issues
+  else
+    PUNCH="Dad Joke fail! Please try again."
+  fi
 else
   STR="Hi!"
 fi
