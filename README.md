@@ -46,7 +46,7 @@ $ cd ~
 $ git clone https://github.com/kaibot3000/bash-scripts.git bash-scripts
 ```
 
-Inside your bash profile, add the bash-scripts directory to your path, and make an alias for each script.
+Inside your bash profile, add the bash-scripts directory to your path, and make an alias for each script:
 ```sh
 export PATH=~/bash-scripts:$PATH
 alias dino="dino.sh"
