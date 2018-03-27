@@ -1,28 +1,13 @@
-![image](dino-compliment.png)
-
 # Dino
 
+![image](dino-compliment.png)
+
 An exploration of bash scripting and aliasing. 
-
-
-#### Run it!
-
-Clone repo:
-```sh
-$ cd ~
-$ git clone https://github.com/KaiDalgleish/bash-scripts.git bash-scripts
-```
-
-Inside your bash profile, add the bash-scripts directory to your path, and make an alias for the script.
-```sh
-export PATH=~/bash-scripts:$PATH
-alias dino="dino.sh"
-```
 
 Try out dino from your command line!
 
 ```sh
-KaiHB:~ kai$ dino danger!
+🍀  kai:kai$ dino danger!
 
 
 
@@ -46,4 +31,24 @@ $ dino kale
 $ dino meme
 $ dino speak
 ```
+# Git knife
 
+A joke script for [Robb Godshaw](http://robb.cc/Art)
+
+Adds a new `knife` command to git, for when you're just done.
+This script works by intercepting all git commands, and passing on any that aren't `knife` to your usual git.
+
+# Installation
+
+Clone repo:
+```sh
+$ cd ~
+$ git clone https://github.com/kaibot3000/bash-scripts.git bash-scripts
+```
+
+Inside your bash profile, add the bash-scripts directory to your path, and make an alias for each script.
+```sh
+export PATH=~/bash-scripts:$PATH
+alias dino="dino.sh"
+alias knife="knife.sh"
+```
