@@ -52,3 +52,10 @@ export PATH=~/bash-scripts:$PATH
 alias dino="dino.sh"
 alias knife="knife.sh"
 ```
+
+In your terminal, `source` your script to get your updates:
+```sh
+$ source ~/.bash_profile
+```
+
+You should now be able to use both `dino` and `git knife`.
