@@ -38,6 +38,11 @@ A joke script for [Robb Godshaw](http://robb.cc/Art)
 Adds a new `knife` command to git, for when you're just done.
 This script works by intercepting all git commands, and passing on any that aren't `knife` to your usual git.
 
+# Tellme
+
+A way to let me know when long-running scripts are done, even if I've wandered off for coffee. 
+Usage: `$ long-running-script.sh ; tellme`
+
 # Installation
 
 Clone repo:
@@ -51,6 +56,7 @@ Inside your bash profile, add the bash-scripts directory to your path, and make 
 export PATH=~/bash-scripts:$PATH
 alias dino="dino.sh"
 alias knife="knife.sh"
+alias tellme="tellme.sh"
 ```
 
 In your terminal, `source` your script to get your updates:
@@ -58,4 +64,10 @@ In your terminal, `source` your script to get your updates:
 $ source ~/.bash_profile
 ```
 
-You should now be able to use both `dino` and `git knife`.
+You should now be able to use the custom commands.
+
+If you get a `Permission Denied` error, add execute permissions using `chmod`:
+
+```sh
+chmod +x dino.sh knife.sh tellme.sh
+```
