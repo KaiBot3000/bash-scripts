@@ -1,3 +1,3 @@
 #!/bin/bash
 
-say -v Fred "Kai, I am done"
+say -v Fred "Kai, I'm done"
